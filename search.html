@@ -14,7 +14,7 @@
       <li><a href="pond.html">Pond</a></li>
       <li class="right"><a  href="login.html">Login</a></li>
     </ul>
-    <labe>Type:</labe>
+    <label>Type:</label>
     <input id="type" />
     <button onclick="search()">Search</button>
     <br />
@@ -32,7 +32,7 @@
       let ducks = [];
 
       async function getAll() {
-        let host = "http://localhost:8080";
+        let host = "https://ducks-service-latest-1-aft4.onrender.com";
         return fetch(host + "/ducks")
           .then((response) => response.json())
           .catch((error) => {
